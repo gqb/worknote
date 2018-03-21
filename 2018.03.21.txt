@@ -1,0 +1,7 @@
+1、代码定位
+	刚接触新项目要改一个问题，但是不知道在代码的什么位置；
+	打开app有问题的界面；
+	执行adb shell dumpsys activity activities命令；
+	在执行结果中搜索mFocusedActivity即可找到界面对应的activity；
+	执行adb shell dumpsys activity your.package.name;
+	在执行结果中搜索Active Fragments即可找到对应的fragment；

@@ -1,0 +1,23 @@
+1、git协作
+	从master分支创建一个新分支feature-new；
+	在feature-new分支上开发新功能；
+	将feature-new push到github；
+	在github上创建一个pull request到master分支；
+	code reviewer完成code review后将feature合并到master分支；
+
+2、使用.9.png格式文件
+	使用.9.png时创建的图片可能无法设置边界，这是图片转换工具造成的；
+	如果给一个view设置一个.9.png格式的图片作为背景，如果图片太大（一般情况下图片不可能比view大)会造成view变大。原因是.9.png的图片格式是有内边距的，可以在设置完背景后重新根据需要设置view的内边距解决图片太造成的影响；
+
+3、code style
+	1、删除无用空行；
+	2、xml文件中/>标签不要单独成行；
+	3、if-else语句和括号之间要有空格，大括号前面要有空格；
+	4、新创建的类文件不需要写类注释，方法尽量做到见名知意，尽量不写注释；
+	5、TAB用四个空格代替，continuation indent用四个空格代替；
+	6、删除无用的import；
+	7、public的方法放在前面；
+	8、少用简写如btn、msg等；
+	9、自定义view时color尽量写到view内部，提高紧凑性；
+	10、禁止将onclick等方法暴漏到外部，可以直接设置或写成全局变量；
+4、使用arcanist管理phabricator中的项目
