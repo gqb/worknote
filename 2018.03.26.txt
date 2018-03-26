@@ -1,0 +1,6 @@
+1、录屏
+	Android studio logcat,点击录屏按钮；
+	bit rate:2Mbps
+	with:480
+	height:848
+	

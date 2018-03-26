@@ -1,0 +1,21 @@
+1、arc的使用
+	加入开发分支为audio_message;
+	创建新的分支feature_animation,完成新功能的开发;
+	使用git提交代码;
+	git checkout audio_message;
+	git pull;
+	git checkout feature_animation;
+	git rebase audio_message更新为最新的代码;
+	git diff HEAD~n;把开发的n个提交diff;
+	如果review 失败，修改后执行git diff HEAD~n+k，k表示更新提交的个数；
+	如果review accepted，git patch DiffId提交patch;
+	arc land --revision DiffId --onto audio_message完成发布;
+
+	如果arc land出现冲突：
+		会出现一个新的分支arcpatch-DiffId;
+		切换到audio_message 执行git cherry-pick arcpatch-DiffId;
+		然后手动执行git push。代码即提交到了audio_message分支上。
+		手动去phabricator上关闭Revisioin。
+	打完收工
+	
+	
